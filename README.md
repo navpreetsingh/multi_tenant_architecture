@@ -46,49 +46,49 @@ C:\users> bundle install
 
 ## DOING MIGRATIONS TO MULTIPLE DB's
 
-**NOTE:** Change the password in file /config/database.yml with your local mysql password
+**NOTE:** Change the password in file **/config/database.yml** with your local mysql password.
 
-**Create a Dummy DB (WINDOWS USERS - Don't copy '$' sign to run command)
+## Create a Dummy DB (WINDOWS USERS - Don't copy '$' sign to run command)
 ```sh
 $ rake db:create
 ```
-This will create a db in MySQL with name 'dummy'.
+This will create a db in MySQL with name **'dummy'**.
 
-**Create a Table USERS in DB (WINDOWS USERS - Don't copy '$' sign to run command)
+## Create a Table USERS in DB (WINDOWS USERS - Don't copy '$' sign to run command)
 ```sh
 $ rake db:migrate
 ```
-This will create a table 'users' in db 'dummy'
+This will create a table **'users'** in db **'dummy'**
 
-**Lets create a multiple dummy DB's (WINDOWS USERS - Don't copy '$' sign to run command)
+## Lets create a multiple dummy DB's (WINDOWS USERS - Don't copy '$' sign to run command)
 ```sh
 $ RAILS_ENV=dev_server_1 rake db:create
 $ RAILS_ENV=dev_server_2 rake db:create
 $ RAILS_ENV=dev_server_3 rake db:create
 ```
-This will create a 3 db's in MySQL with name 'dummy_1', 'dummy_2' & 'dummy_3'.
+This will create a 3 db's in MySQL with name **'dummy_1', 'dummy_2' & 'dummy_3'**.
 
-**Migrate a Table USERS to multiple DB's (WINDOWS USERS - Don't copy '$' sign to run command)
+## Migrate a Table USERS to multiple DB's (WINDOWS USERS - Don't copy '$' sign to run command)
 ```sh
 $ RAILS_ENV=dev rake db:mass_migration
 ```
-This will create a table 'users' in all db's
+This will create a table **'users'** in all db's
 
-**Create a new Table ADDRESSES in Dummy DB (WINDOWS USERS - Don't copy '$' sign to run command)
-**NOTE:** Copy a file in folder '/db' with name '20161017055930_add_address_table.rb' to folder '/db/migrate'
+## Create a new Table ADDRESSES in Dummy DB (WINDOWS USERS - Don't copy '$' sign to run command)
+**NOTE:** Copy a file in folder **'/db'** with name **'20161017055930_add_address_table.rb'** to folder **'/db/migrate'**
 ```sh
 $ rake db:migrate
 ```
-This will create a table 'addresses' in db 'dummy'
+This will create a table **'addresses'** in db **'dummy'**
 
-**Migrate a Table ADDRESSES to multiple DB's (WINDOWS USERS - Don't copy '$' sign to run command)
+## Migrate a Table ADDRESSES to multiple DB's (WINDOWS USERS - Don't copy **'$'** sign to run command)
 ```sh
 $ RAILS_ENV=dev rake db:mass_migration
 ```
-This will create a table 'addresses' in all db's
+This will create a table **'addresses'** in all db's
 
-**Let's create 1 more DB with name 'dummy_4'
-**NOTE:** Change a line in file '/config/database.yml'
+## Let's create 1 more DB with name 'dummy_4'
+**NOTE:** Change a line in file **'/config/database.yml'**
 ```sh
 dev_count: 3
 ```
@@ -102,10 +102,10 @@ Run Below commands to create new db
 ```sh
 $ RAILS_ENV=dev_server_4 rake db:create
 ```
-New DB has been created with name dummy_4
+New DB has been created with name **'dummy_4'**
 
-**Let's populate the new DB with tables
+## Let's populate the new DB with tables
 ```sh
 $ RAILS_ENV=dev rake db:migrate
 ```
-New DB has been populated with tables 'users' & 'addresses'
+New DB has been populated with tables **'users'** & **'addresses'**
