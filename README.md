@@ -110,4 +110,19 @@ $ RAILS_ENV=dev rake db:mass_migration
 ```
 New DB has been populated with tables **'users'** & **'addresses'**
 
-#If you think this is a suitable option to handle multiple DB's with same schema on different environments. Contact me to take it to next level and automate it fully.
+# Find it as suitable option to handle migrations on multiple db's across different environments, we can do much more
+
+## 1. Create Schema Diagrams
+
+**UBUNTU USERS install graphviz**
+```sh
+$ sudo apt-get install graphviz
+```
+
+**Create Schema diagram by running below comamnds
+```sh
+$ bundle exec erd
+$ rake diagram:all
+```
+
+## 2. Automate with Jenkins, which will automatically update DB's of particular environment on deployment.
