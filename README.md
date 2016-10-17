@@ -75,7 +75,7 @@ $ RAILS_ENV=dev rake db:mass_migration
 This will create a table **'users'** in all db's
 
 ## Create a new Table ADDRESSES in Dummy DB (WINDOWS USERS - Don't copy '$' sign to run command)
-**NOTE:** Copy a file in folder **'/db'** with name **'20161017055930_add_address_table.rb'** to folder **'/db/migrate'**
+**NOTE:** Copy a file in folder **'/db'** with name **'20161017055930_add_address_table.rb'** to folder **'/db/migrate'**. This is a **migration file**.
 ```sh
 $ rake db:migrate
 ```
