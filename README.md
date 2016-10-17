@@ -119,10 +119,13 @@ New DB has been populated with tables **'users'** & **'addresses'**
 $ sudo apt-get install graphviz
 ```
 
-**Create Schema diagram by running below comamnds
+**Create Schema diagram by running below commmands**
 ```sh
 $ bundle exec erd
 $ rake diagram:all
 ```
+Check the schema diagram in files
+ => '/erd.pdf'
+ => '/doc/models_complete.svg'
 
 ## 2. Automate with Jenkins, which will automatically update DB's of particular environment on deployment.
