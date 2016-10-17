@@ -129,3 +129,5 @@ Check the schema diagram in files
  => '/doc/models_complete.svg'
 
 ## 2. Automate with Jenkins, which will automatically update DB's of particular environment on deployment.
+
+## 3. Create new firm from UI and create it's DB and populate it with proper schema
