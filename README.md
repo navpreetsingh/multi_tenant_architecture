@@ -96,9 +96,9 @@ dev_count: 3
 ```sh
 dev_count: 4
 ```
-This change will identify 1 more db in mass_migration. You can see the key 'dev_server_4' having details of the db. You can **add more db's** in same format and changing the **dev_count** in given file above.
+This change will identify 1 more db in mass_migration. You can see the key **'dev_server_4'** having details of the db. You can **add more db's** in same format and changing the **dev_count** in given file above.
 
-Run Below commands to create new db
+**Run Below commands to create new db**
 ```sh
 $ RAILS_ENV=dev_server_4 rake db:create
 ```
