@@ -106,6 +106,6 @@ New DB has been created with name **'dummy_4'**
 
 ## Let's populate the new DB with tables
 ```sh
-$ RAILS_ENV=dev rake db:migrate
+$ RAILS_ENV=dev rake db:mass_migration
 ```
 New DB has been populated with tables **'users'** & **'addresses'**
