@@ -110,4 +110,4 @@ $ RAILS_ENV=dev rake db:mass_migration
 ```
 New DB has been populated with tables **'users'** & **'addresses'**
 
-#If you think this is a suitable option to handle multiple DB's with same schema on differenct environments. Contact me to take it to next level and automate it fully.
+#If you think this is a suitable option to handle multiple DB's with same schema on different environments. Contact me to take it to next level and automate it fully.
