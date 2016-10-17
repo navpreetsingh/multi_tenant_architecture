@@ -28,7 +28,7 @@ $ rails --version
 # HOW TO CLONE THE PROJECT ON YOUR MACHINE
 **NOTE:** Make Sure MySQL is there on your system
 
-**Run the below commands (LINUX USERS)
+**Run the below commands** (LINUX USERS)
 ```sh
 $ git clone git@github.com:navpreetsingh/multi_tenant_architecture.git
 $ cd multi_tenant_architecture
@@ -36,7 +36,7 @@ $ gem install bundler
 $ bundle install
 ```
 
-**Run the below commands (WINDOWS USERS)
+**Run the below commands** (WINDOWS USERS)
 ```sh
 C:\users> git clone git@github.com:navpreetsingh/multi_tenant_architecture.git
 C:\users> cd multi_tenant_architecture
